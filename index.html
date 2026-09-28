@@ -4774,7 +4774,7 @@
           cacheKey: "parducci-github-cache-v13",
           cacheTTL: 1000 * 60 * 30,
         },
-        vercel: { jsonPath: "./vercel.json", cacheKey: "parducci-vercel-cache-v13", cacheTTL: 1000 * 60 * 30 },
+        vercel: { jsonPath: "./vercell.json", cacheKey: "parducci-vercel-cache-v13", cacheTTL: 1000 * 60 * 30 },
         certificates: { jsonPath: "./certificates.json", cacheKey: "parducci-certificates-cache-v13", cacheTTL: 1000 * 60 * 60 },
         social: { github: "Edgaarsq", linkedin: "edgarparducci", instagram: "edparducci", x: "snewkiz", tiktok: "edparducci" },
         corsProxy: "https://api.allorigins.win/raw?url=",
@@ -5324,7 +5324,7 @@
         if (!force) { const cached = readVercelCache(); if (cached) { renderVercel(cached); return; } }
         vercelGrid.innerHTML = skeletonHTML();
         try {
-          const res = await fetch(CONFIG.vercel.jsonPath);
+          const res = await fetch(CONFIG.vercell.jsonPath);
           if (!res.ok) throw new Error(`HTTP ${res.status}`);
           const data = await res.json();
           const nameEl = $("[data-vercel-name]");
