@@ -1,13 +1,1 @@
-{
-    "name": "Edgaarsq",
-    "link": "https://vercel.com/edgaarsq",
-    "projects": [
-        {
-            "name": "GED - Travel Agency to a School Homework",
-            "description": "Nothing here...",
-            "framework": "Next.js",
-            "url": "https://ged-travel-agency-school-homework.vercel.app/",
-            "repo": "https://github.com/Edgaarsq/Ged.-Travel-Agency---School-Homework"
-        }
-    ]
-}
+
